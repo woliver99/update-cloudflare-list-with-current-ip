@@ -66,6 +66,8 @@ def update_ip(ip: str) -> bool:
 
     if updated == True:
         print(f'IP updated to "{ip}" at {datetime.now()}')
+    else:
+        print(f'Failed to update IP to "{ip}" with response: {response.text}')
     
     return updated
 
