@@ -82,7 +82,7 @@ def get_last_list() -> set:
     with open(last_list_file, "r") as f:
         return set(json.load(f))
 
-
+print("Starting IP update script...")
 while True:
     try:
         ip = get_ip()
